@@ -13,3 +13,10 @@
     margin: 1.4rem;
     font-family: "Roboto Slab", serif;
 }
+.personal {
+    font-family: "Roboto Slab", serif;
+    font-size: x-large;
+}
+.personal-divs {
+    text-align: center;
+}
