@@ -1,5 +1,5 @@
 function kocsiopen() {
-    document.getElementById("hoveroverlay").style.width = "100%";
+    document.getElementById("hoveroverlay").style.width = "60vw";
   }
   
   function kocsiclose() {
