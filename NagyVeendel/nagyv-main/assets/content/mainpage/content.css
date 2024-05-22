@@ -1,0 +1,18 @@
+
+.mustangsize {
+    width: 90%;
+    border-radius: 2rem;
+    background: linear-gradient(145deg, #fff8f8, #d6d1d1);
+    box-shadow:  50px 45px 69px #b7b3b3,
+                 -35px -35px 59px #ffffff;
+}
+.contenth2 {
+    padding: 2.4rem;
+    font-family: "Lilita One", sans-serif;
+    font-size: 1.5rem;
+}
+.mustang-animation {
+    animation-name: mustangneon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

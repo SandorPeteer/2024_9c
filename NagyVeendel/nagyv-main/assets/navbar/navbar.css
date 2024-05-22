@@ -1,0 +1,97 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background: linear-gradient(88deg, #000000, #ffffff, #c6c6c6);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  font-size: larger;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  font-size: clamp(1.8em, 4vw, 8em);
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+  transform: scale(1.2);
+  letter-spacing: 6px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 1rem}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.overlayitemsbackground {
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(90deg, #212121,#575757);      
+  box-shadow: -1px 1px 65px 15px rgba(0,0,0,0.75);                      
+}
+.icondiv {
+  padding: 20px;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+.icon1 {
+  transition: 0.5s;
+}
+.icon1:hover {
+  transform: rotate(10deg);
+}
+.overlay-content-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
