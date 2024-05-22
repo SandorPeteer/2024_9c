@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hírlevél</title>
+    <title>9C - 2024 - projekt</title>
 </head>
+
 <body>
     <h1>9C - 2024 - WEB PROJEKT MNUKÁI</h1>
-    <p>A srácok munkái:</p>
-    <ul>
-        <li><a href="https://sandorpeteer.github.io/2024_9c/NagyVeendel/nagyv-main/nagyv.html">Nagy Vendel</a></li>
-    </ul>
-    <form action="javascript:hir()">
-        <fieldset style="width: fit-content;">
-            <input type="email" name="data" id="mail_input" placeholder="email" required><br>
-            <input type="text" name="data" id="name_input" placeholder="név" required><br>
-            <input type="checkbox" name="data" id="aszf" checked>ászf<br>
-            <input type="checkbox" name="data" id="hir_level">hírlevél<br>
-            <input type="submit" value="OK">
-        </fieldset>
-    </form>
-    <script>
-        function hir() {
-            if (aszf.checked){
-                localStorage.setItem("email",mail_input.value)
-                localStorage.setItem("name",name_input.value)
-                if (hir_level.checked){
-                    localStorage.setItem("hírlevél","igen")
-                }
-                else{
-                    localStorage.setItem("hírlevél","nem")
-                }
-            }
-            else{
-                alert("El kell fogadni az ÁSZF-et!")
-            }
-        }
-    </script>
+    <h2>A srácok munkái:</h2>
+        <ul>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/NagyVeendel/nagyv-main/nagyv.html">Nagy Vendel</a></li>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/PetőMilán/index.html">Pető Milán</a></li>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/Vasas Daniel/index.html">Vasas Daniel</a></li>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/">XYZ</a></li>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/">XYZ</a></li>
+            <li><a href="https://sandorpeteer.github.io/2024_9c/">XYZ</a></li>
+        </ul>
 </body>
+
 </html>
