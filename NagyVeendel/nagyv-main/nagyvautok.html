@@ -25,6 +25,8 @@
     
     <!-- Content -->
     <link rel="stylesheet" href="assets/content/mainpage/content.css">
+    <link rel="stylesheet" href="assets/kocsioverlay/overlay.css">
+    <script src="assets/kocsioverlay/overlay.js"></script>
                 <!-- Form -->
                 <link rel="stylesheet" href="assets/content/form/form.css">
                 <script src="assets/content/form/form.js"></script>
@@ -43,8 +45,7 @@
 
         <!-- Header -->
         <div class="headerdiv">
-            <img src="assets/images/ford/ford.png" class="headerimg img-thumbnail">
-            <h1 class="satisfy-regular headertext">The Best in the West</h1>
+            <h1 class="satisfy-regular headertext headerdiv2nd">The Best in the West</h1>
         </div>
         <!-- Header Vége -->
 
@@ -68,7 +69,7 @@
                     <a href="nagyv.html" class="overlay-content-text-a">Ford</a>
                 </div>
                 <div class="overlayitemsactive">
-                    <a href="nagyvautok.html" class="overlay-content-text-a overlay-content-textactive">Autók</a>
+                    <a href="nagyvautok.html" class=" overlay-content-textactive">Autók</a>
                 </div>
             </div>
         </div>
@@ -76,25 +77,35 @@
 
         <!-- Content -->
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
+            
+            <div id="hoveroverlay" class="overlay" onclick="kocsiclose()">
+                <div class="overlay-content">
 
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-12 text-center ">
-                    <h2 class="contenth2">
-                        "Mi vagyunk a csúcs, és mindenki más csak követhet."
-                    </h2>
-                    <img src="assets/images/ford/mustangmain.png" alt="Mustang" title="Mustang" class="img-thumbnail mustang-animation m-auto mustangsize">
+                <div class="col-md-12">
+                    <h2 class="kocsifajtak">Kocsi Fajták</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 kocsik">
+                    <img src="assets/images/kocsik/mustang.png" class="img-thumbnail" onclick="kocsiopen()">
+                </div>
+                <div class="col-md-6 col-sm-12 kocsik">
+                    <img src="assets/images/kocsik/puma.png" class="img-thumbnail">
+                </div>
+                <div class="col-md-6 col-sm-12 kocsik">
+                    <img src="assets/images/kocsik/fiesta.png" class="img-thumbnail">
+                </div>
+                <div class="col-md-6 col-sm-12 kocsik">
+                    <img src="assets/images/kocsik/focus.png" class="img-thumbnail">
                 </div>
             </div>
         </div>
         <!-- Content Vége -->
-        
+
         <!-- Form -->
 
         <div class="card">

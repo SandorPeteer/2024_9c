@@ -32,7 +32,7 @@
   display: block;
   transition: 0.3s;
   letter-spacing: 3px;
-  font-size: clamp(2em, 4vw, 8em);
+  font-size: clamp(2.4em, 4vw, 8em);
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -75,14 +75,15 @@
   box-shadow: -1px 1px 65px 15px rgba(0,0,0,0.8);
 }
 .overlay-content-textactive {
-  color: #000000;
   padding: 8px;
   font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
+  color: #000000;
   display: block;
   transition: 0.3s;
   letter-spacing: 3px;
-  font-size: clamp(2em, 4vw, 8em);
+  font-size: clamp(2.4em, 4vw, 8em);
 }
 .icondiv {
   padding: 20px;

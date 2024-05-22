@@ -16,3 +16,16 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+/* ^-- Mainpage */
+
+/* Kocsik */
+
+.kocsifajtak {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin-top: 3rem;
+}
+.kocsik {
+    margin: auto;
+    display: block;
+}
