@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hírlevél</title>
+</head>
+<body>
+    <form action="javascript:hir()">
+        <fieldset style="width: fit-content;">
+            <input type="email" name="data" id="mail_input" placeholder="email" required><br>
+            <input type="text" name="data" id="name_input" placeholder="név" required><br>
+            <input type="checkbox" name="data" id="aszf" checked>ászf<br>
+            <input type="checkbox" name="data" id="hir_level">hírlevél<br>
+            <input type="submit" value="OK">
+        </fieldset>
+    </form>
+    <script>
+        function hir() {
+            if (aszf.checked){
+                localStorage.setItem("email",mail_input.value)
+                localStorage.setItem("name",name_input.value)
+                if (hir_level.checked){
+                    localStorage.setItem("hírlevél","igen")
+                }
+                else{
+                    localStorage.setItem("hírlevél","nem")
+                }
+            }
+            else{
+                alert("El kell fogadni az ÁSZF-et!")
+            }
+        }
+    </script>
+</body>
+</html>
