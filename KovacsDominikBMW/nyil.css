@@ -1,0 +1,34 @@
+
+
+/* BACK TO TOP */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.fel {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: orange;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.fel span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.fel:hover {
+	background-color: black;
+}
+.fel:hover span {
+	transform: translateY(-4px);
+}
