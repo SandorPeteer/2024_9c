@@ -63,6 +63,18 @@
   background: linear-gradient(90deg, #212121,#575757);      
   box-shadow: -1px 1px 65px 15px rgba(0,0,0,0.75);                      
 }
+.overlayitemsactive a {
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(180deg, rgb(112, 112, 112)#575756);      
+  box-shadow: -1px 1px 65px 15px rgba(0,0,0,0.8);
+  color: #000000;
+}
+.overlayitemsactive a:hover {
+  color: #000000;
+}
 .icondiv {
   padding: 20px;
   position: absolute;
