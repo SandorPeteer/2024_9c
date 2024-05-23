@@ -72,8 +72,7 @@ body{
 
 #contact {
     width: 100%;
-    border: solid white;
-    border-radius: 10px;
+    border: solid white 3px;
 }
 
 .fel {
