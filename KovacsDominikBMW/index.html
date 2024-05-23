@@ -17,11 +17,11 @@
         <div class="navbar">
             <div class="logo "><a href="bmw.html"><img src="bmwhead.svg" alt="bmw logó"></a></div>
             <ul class="link">
-                <li><a href="index">Főoldal</a></li>
-                <li><a  href="index.html">BMW</a></li>
-                <li><a  href="audi">Audi</a></li>
-                <li><a  href="porsche">Porsche</a></li>
-                <li><a  href="merci">Mercedes</a></li>
+                <li><a class="nav1" href="index.html">Főoldal</a></li>
+                <li><a class="nav1"  href="bmw.html">BMW</a></li>
+                <li><a class="nav1"  href="audi">Audi</a></li>
+                <li><a class="nav1"  href="porsche">Porsche</a></li>
+                <li><a class="nav1"  href="merci">Mercedes</a></li>
             </ul>
             <a href="#hirlevel" class="action_btn">Kezdés</a>
             <div class="toggle_btn">
@@ -30,8 +30,8 @@
         </div>
         <div class="dropdown_menu bg-dark">
             
-                <li><a href="index">Főoldal</a></li>
-                    <li><a href="index.html">BMW</a></li>
+                <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="bmw.html">BMW</a></li>
                     <li><a href="audi">Audi</a></li>
                     <li><a href="porsche">Porsche</a></li>
                     <li><a href="merci">Mercedes</a></li>
@@ -45,7 +45,50 @@
             <source src="m4video.mp4" type="video/mp4">
         </video>
     </div>
-
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4 container-fluid">
+      <div class="col">
+        <div class="card border-warning border-3">
+          <img src="bmw-tortenelem.jpg" class="card-img-top" alt="bmw történelem">
+          <div class="card-body">
+            <h5 class="card-title">Történelem</h5>
+            <p class="card-text">A BMW (Bayerische Motoren Werke AG) 1916-ban alakult Németországban, eredetileg repülőgép-motorok gyártásával foglalkozott. Az 1920-as években kezdtek motorkerékpárokat, majd később autókat is gyártani, és az évtizedek során világhírű prémium járműgyártóvá váltak. A BMW mára a luxus- és sportautók, valamint a motorkerékpárok piacának egyik vezető szereplője.</p>
+            <button class="btn feliratkoz ">További információk</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning border-3">
+          <img src="bmw-modell.jpg" class="card-img-top" alt="bmw modell" style="width: 91%;">
+          <div class="card-body">
+            <h5 class="card-title">Modellek</h5>
+            <p class="card-text">A BMW modellek a sportos eleganciát és a csúcstechnológiát ötvözik, biztosítva a dinamikus vezetési élményt. A kínálatban megtalálhatók a kompakt, városi autóktól kezdve a luxus szedánokon át egészen a nagy teljesítményű sportautókig. Az innovatív megoldások és a prémium minőség minden modellben alapvetőek, így a BMW méltán híres a megbízhatóságáról és a vezetési élményéről.</p>
+            <button class="btn feliratkoz">További információk</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning border-3">
+          <img src="bmw-motorsport.webp" class="card-img-top" alt="bmw motorsport">
+          <div class="card-body">
+            <h5 class="card-title">Motorsport</h5>
+            <p class="card-text">A BMW Motorsport a BMW Group versenyrészlege, amely 1972-ben alakult, és azóta jelentős sikereket ért el különböző motorsport sorozatokban, beleértve a Formula 1-et, a DTM-et és a Le Mans-i 24 órás versenyt. A részleg felelős a BMW M modellek fejlesztéséért is, amelyek utcai autókban is alkalmazzák a versenytechnológiát. A BMW Motorsport elkötelezett a teljesítmény, az innováció és a vezetési élmény folyamatos javítása mellett.</p>
+            <button class="btn feliratkoz">További információk</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning border-3">
+          <img src="bmw-gyartas.jpg" class="card-img-top" alt="gyártás">
+          <div class="card-body">
+            <h5 class="card-title">Gyártás</h5>
+            <p class="card-text">A BMW gyártási folyamata a legmodernebb technológiákat és szigorú minőségi ellenőrzéseket alkalmazza, hogy biztosítsa a járművek kiváló teljesítményét és megbízhatóságát. A gyártás során nagy hangsúlyt fektetnek a fenntarthatóságra, beleértve az energiahatékony módszereket és a környezetbarát anyagok használatát. Minden BMW modell gyártása a tervezéstől a végső összeszerelésig precíz munkafolyamatokat követ, hogy a vásárlók prémium minőségű autót kapjanak.</p>
+            <button class="btn feliratkoz">További információk</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
     <section id="hirlevel" class=" container">
         <h2 class="text-center fw-bold">Hírlevél</h2>
         <form action="javascript:fel()">
@@ -63,16 +106,15 @@
             </div>
             <button type="submit" class="btn feliratkoz">Feliratkozás</button>
             <button type="reset" class="btn btn-primary">Mégsem</button>
-            <br>
-            <br>
+            
           <label for="azsf_input">ÁSZF Elfogadása</label>
           <input type="checkbox" name="data" id="aszf_input">
         </form>
     </section>
-    <a href="#head"><i class="fa-solid fa-arrow-up fel"></i></a>
+    
     <br>
     <br>
-  <footer>
+    <footer>
     <section class="text-center bg-dark">
         <a target="_blank"
            class="btn btn-outline-warning btn-floating m-1"
@@ -104,6 +146,7 @@
     </div>
   </footer>
 
+  <a href="#head"><i class="fa-solid fa-arrow-up fel"></i></a>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
