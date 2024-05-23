@@ -77,11 +77,24 @@
 
         <!-- Content -->
         <div class="container">
-            
-            <div id="hoveroverlay" class="kocsi-overlay" onclick="kocsiclose()">
-                <div class="overlay-content">
-
+            <div id="fulloverlay" class="fulloverlay" onclick="kocsiclosefocus(),kocsiclosemustang(),kocsiclosepuma(),kocsiclosefiesta()">
+                
+                <div id="hoveroverlaymustang" class="kocsi-overlay">
+                    <img src="assets/images/kocsik/mustang.png" class="overlaykocsi" id="kocsik01">
                 </div>
+
+                <div id="hoveroverlaypuma" class="kocsi-overlay">
+                    <img src="assets/images/kocsik/puma.png" class="overlaykocsi" id="kocsik02">
+                </div>
+
+                <div id="hoveroverlayfiesta" class="kocsi-overlay">
+                    <img src="assets/images/kocsik/fiesta.png" class="overlaykocsi" id="kocsik03">
+                </div>
+
+                <div id="hoveroverlayfocus" class="kocsi-overlay">
+                    <img src="assets/images/kocsik/focus.png" class="overlaykocsi" id="kocsik04">
+                </div>
+
             </div>
 
             <div class="row">
@@ -90,17 +103,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12 kocsik">
-                    <img src="assets/images/kocsik/mustang.png" class="img-thumbnail" onclick="kocsiopen()">
+                <div class="col-md-6 col-sm-12 ">
+                    <img src="assets/images/kocsik/mustang.png" class="img-thumbnail kocsik" onclick="kocsiopenmustang(), startanimation(document.getElementById('fulloverlay'))">
                 </div>
-                <div class="col-md-6 col-sm-12 kocsik">
-                    <img src="assets/images/kocsik/puma.png" class="img-thumbnail">
+                <div class="col-md-6 col-sm-12 ">
+                    <img src="assets/images/kocsik/puma.png" class="img-thumbnail kocsik" onclick="kocsiopenpuma(), startanimation(document.getElementById('fulloverlay'))">
                 </div>
-                <div class="col-md-6 col-sm-12 kocsik">
-                    <img src="assets/images/kocsik/fiesta.png" class="img-thumbnail">
+                <div class="col-md-6 col-sm-12 ">
+                    <img src="assets/images/kocsik/fiesta.png" class="img-thumbnail kocsik" onclick="kocsiopenfiesta(), startanimation(document.getElementById('fulloverlay'))">
                 </div>
-                <div class="col-md-6 col-sm-12 kocsik">
-                    <img src="assets/images/kocsik/focus.png" class="img-thumbnail">
+                <div class="col-md-6 col-sm-12 ">
+                    <img src="assets/images/kocsik/focus.png" class="img-thumbnail kocsik" onclick="kocsiopenfocus(), startanimation(document.getElementById('fulloverlay'))">
                 </div>
             </div>
         </div>

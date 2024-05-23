@@ -24,8 +24,32 @@
     font-family: "Roboto Slab", serif;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 2.4rem;
 }
 .kocsik {
     margin: auto;
     display: block;
+    transition: 0.6s;
+    border: 0;
+
+}
+.kocsik:hover {
+    transform: scale(1.2);
+
+}
+.overlaykocsi {
+    overflow: visible;
+    object-position: 13rem;
+    float: right;
+    display: block;
+    z-index: 10;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .overlaykocsi {
+        width: 0;
+    }
 }

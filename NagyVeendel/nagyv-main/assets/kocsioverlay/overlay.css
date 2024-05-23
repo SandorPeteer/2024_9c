@@ -1,17 +1,14 @@
 .kocsi-overlay {
-    height: 50%;
     width: 0;
     position: fixed;
     z-index: 12;
-    top: 0;
+    top: 14rem;
     left: 0;
-    background-color: bisque;
-    background-size: 50%;
-    -webkit-animation: AnimationName 6s ease-in-out infinite;
-    -moz-animation: AnimationName 6s ease-in-out infinite;
-    animation: AnimationName 6s ease-in-out infinite;
-    animation-direction: alternate;
-    overflow-x: hidden;
+    border-top-right-radius: 39px;
+    border-bottom-right-radius: 39px;
+    background: #c2c2c2;
+    box-shadow:  36px 36px 72px #929292,
+                -36px -36px 72px #f3f3f3;
     transition: 0.5s;
   }
   .kocsi-overlay-content {
@@ -22,11 +19,31 @@
     text-align: center;
     margin-top: 30px;
   }
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 1rem}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-}
+  .fulloverlay {
+    background-color: white;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    animation: 1s fulloverlay1;
+  }
+@keyframes fulloverlay1 {
+  
+  from {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  30% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
