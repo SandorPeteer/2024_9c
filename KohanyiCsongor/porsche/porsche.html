@@ -87,7 +87,41 @@
       <br>
     </section>
     <section id="hirlevel">
-
+      <h2 class="text-center">Hírlevél</h2>
+      <div class="hirlevel w-75">
+        <form>
+          <fieldset>
+            <div class="mb-3">
+              <label for="nev">Név</label>
+              <input class="form-control" type="text" name="" id="nev" required placeholder="Kis Pista">
+            </div>
+            <div class="mb-3">
+              <label for="email">E-mail</label>
+              <input class="form-control" type="email" name="" id="email" required placeholder="kisp@gmail.com">
+            </div>
+            <div class="mb-3">
+              <input type="checkbox" name="ave" id="checkbox" required>
+              Adatvédelmi nyilatkozat elfogadása
+            </div>
+            <button id="btn" class="bg-success btn text-white" onclick="hirlevel()">Feliratkozás a hílevélre</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
+    <br>
+    <div class="marg2"></div>
+      <footer class="bg-dark text-white text-center p-4">
+        <h6>©Készítette:Kohányi Csongor Zoltán</h6>
+      </footer>
+      <script>
+        function hirlevel() {
+          if (checkbox.checked){
+          localStorage.setItem("email" , email.value)
+          localStorage.setItem("email" , email.value)
+        }
+          document.getElementById("btn").innerHTML = alert('Köszönöm a feliratkozást!');
+        }
+      </script>
+    
 </body>
 </html>
