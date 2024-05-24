@@ -59,14 +59,14 @@
     <!-- End Mp4 Video -->
     <br>
     <!-- Card -->
-    <div class="container">
+    <div class="container kartya">
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card2" style="width: 18rem;">
                     <img src="mercedes-benz-300-sl.png" class="card-img-top" alt="Mercedes Benz 300 SL" title="Mercedes Benz 300 SL">
                     <div class="card-body">
                       <h5 class="card-title">Történet</h5>
@@ -78,7 +78,7 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card2" style="width: 18rem;">
                     <img src="amg-rajz (1).png" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Modellek</h5>
@@ -90,11 +90,11 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card2" style="width: 18rem;">
                     <img src="amg-terv (1).jpg" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Gyártás és Technológia</h5>
-                      <p class="card-text">A Mercedes-Benz autók gyártási technológiája a legmodernebb módszereket és technológiákat alkalmazza annak érdekében, hogy kiváló minőségű, megbízható és innovatív járműveket állítsanak elő.</p>
+                      <p class="card-text">A Mercedes-Benz autók gyártási technológiája a legmodernebb módszereket és technológiákat alkalmazza annak érdekében, hogy kiváló minőségű, megbízható és innovatív járműveket állítsanak elő és mindig a legjobbra törekednek.</p>
                       <a href="#" class="btn btn-primary">További Információ</a>
                     </div>
                   </div>
@@ -102,11 +102,11 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card2" style="width: 18rem;">
                     <img src="mercif1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Motorsport</h5>
-                      <p class="card-text">A Mercedes-Benz a motorsportokban kiemelkedő szerepet játszik, különösen a Formula-1-ben, ahol a Mercedes-AMG Petronas csapat számos világbajnoki címet nyert a hibrid érában.</p>
+                      <p class="card-text">A Mercedes-Benz Motorsport kiemelkedik a Forma-1-ben és a Formula E-ben, több világbajnoki címet nyerve, valamint jelen van a GT versenyeken is az AMG GT3 és GT4 modelljeikkel. Híresek technológiai innovációikról, különösen Forma-1-ben.</p>
                       <a href="#" class="btn btn-primary">További Információ</a>
                     </div>
                   </div>
@@ -127,51 +127,89 @@
     <!-- End Card -->
     <br>
     <!-- Hírlevél -->
-    <section id="contact" class="mt-5 bg-light">
-      <h2 class="text-center">Hírlevél</h2>
-      <form action="javascript:fel()">
-          <div class="mb-3">
-              <label for="name" class="form-label">Név</label>
-              <input type="text" class="form-control" id="name_input" required>
-          </div>
-          <div class="mb-3">
-              <label for="email" class="form-label">E-mail cím</label>
-              <input type="email" class="form-control" id="email_input" required>
-          </div>
-          <div class="mb-3">
-              <label for="message" class="form-label">Üzenet</label>
-              <textarea class="form-control" id="message" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" onclick="Feliratkoz()">Küldés</button>
-          <button type="reset" class="btn btn-primary">Mégsem</button>
-          <input type="checkbox" name="data" id="aszf_input">
-          <label for="azsf_input">ÁSZF Elfogadása</label>
-      </form>
-  </section>
+      <div class="container">
+        <div class="row">
+          <section class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 my-5">
+            <div class="card shadow p-5">
+              <img src="hirlevel.jpg" alt="Email kép" class="img-fluid mb-5">
+              <h3 class="mb-3">Iratkozz fel a Hírlevelünkre!</h3>
+              <p class="text-justify">Iratkozz fel hogy nem maradj le semmilyen újdonságról!</p>
+              <form action="javascript:fel()">
+                <input type="email" id="email_input" class="form-control" placeholder="Írd be az Email címedet" required>
+                <button type="submit" class="btn btn-primary btn-block mt-3 rounded-pill" onclick="Feliratkoz()">Feliratkozás</button>
+                <input type="checkbox" name="data" id="aszf_input">
+                <label for="aszf_input">ÁSZF Elfogadása</label>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
     <!-- Hírlevél Vége -->
 
     <!-- Gomb -->
 <a href="#head"><i class="fa-solid fa-arrow-up fel"></i></a>
     <!-- Gomb vége -->
-<br>
-<br>
-<br>
-<br>
-<br>
 <hr>
     <!-- Footer -->
-<footer class="container-fluid">
-    &copy;Copyright
-    <br>
-    Készítette: Szántó Botond
-    <br>
-    <p>Elérhetőségek:</p>
-    <a href="mailto:szantob@kkszki.hu">szantob@kkszki.hu</a>
-    <br>
-    <a href="https://instagram.com/boti_44/"><img src="insta.png" alt="instagram" id="socialmedia">Instagram</a>
-    <br>
-    <a href="https://facebook.com/szanto.botond.1"><img src="facebook.png" alt="facebook" id="socialmedia">Facebook</a>
-</footer>
+    <section class="p-3 pt-0">
+      <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <!-- Copyright -->
+          <div class="p-3 text-white">
+            © 2024 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+               >Szántó Botond</a>
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <!-- Facebook -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             class="text-white"
+             role="button"
+             href="https://facebook.com/szanto.botond.1/"
+             target="_blank"
+             ><i class="fab fa-facebook-f"></i
+            ></a>
+
+          <!-- Github -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             class="text-white"
+             role="button"
+             href="https://github.com/Szantobotond"
+             target="_blank"
+             ><i class="fab fa-github"></i
+            ></a>
+
+          <!-- Discord -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             class="text-white"
+             role="button"
+             href="discordapp.com/users/700947045758009404"
+             target="_blank"
+             ><i class="fab fa-discord"></i
+            ></a>
+
+          <!-- Instagram -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             class="text-white"
+             role="button"
+             href="https://www.instagram.com/boti_44/"
+             target="_blank"
+             ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+        <!-- Grid column -->
+      </div>
+    </section>
     <!-- End Footer -->
 
     <!-- Javascript -->
@@ -180,7 +218,6 @@
   function fel() {
     if (aszf_input.checked) {
       localStorage.setItem("email", email_input.value)
-      localStorage.setItem("name", name_input.value)
       alert("Sikeresen Feliratkozott")
     }
 
