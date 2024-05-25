@@ -239,3 +239,44 @@ a{
 .inputbox input:valid ~ span{
     transform: translateX(-10px) translateY(-32px);font-size: 12px
 }
+
+#p2 {
+    text-align: justify;
+}
+
+.img2 {
+    border: solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.modellek {
+    color: white;
+}
+
+.img3 {
+    border: solid white;
+    border-radius: 10px;
+    margin-top: 2.3rem;
+}
+
+.img4 {
+    border: solid white;
+    border-radius: 10px;
+}
+.img5 {
+    border: solid white;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.img6 {
+    border: solid white;
+    border-radius: 10px;
+}
+
+.img7{
+    border: solid white;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+}
