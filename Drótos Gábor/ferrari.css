@@ -76,4 +76,34 @@ video{
 p{
     font-weight: 700;
 }
-
+li{
+    text-decoration: none;
+list-style: none;
+}
+ul{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.socialicon{
+    display: flex;
+    justify-content: center;
+}
+.socialicon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicon a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover{
+    background-color: rgb(31, 32, 31);
+}
+.socialicon a:hover i{
+    color: #fff200;
+    transition: 0.5s;
+}

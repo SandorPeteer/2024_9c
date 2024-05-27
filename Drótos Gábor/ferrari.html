@@ -43,11 +43,11 @@
                                         <i class="bi bi-briefcase"></i>
                                        Üzleti ügyek
                                     </a><br></li>
-                                    <li class="pb-2"><a class="text-decoration-none" href="#">
+                                    <li class="pb-2"><a class="text-decoration-none" href="#modellek">
                                         <i class="bi bi-car-front"></i>
                                         Híres modellek
                                     </a><br></li>
-                                    <li class="pb-2"><a class="text-decoration-none" href="#">
+                                    <li class="pb-2"><a class="text-decoration-none" href="#color">
                                     <i class="bi bi-palette-fill"></i>
                                     Színek
                                     </a></li>
@@ -109,7 +109,7 @@
 
 
         <section class="container-fluid my-5 col-sm-12">
-            <h1 class="text-center my-4">Híres modellek</h1>
+            <h1 class="text-center my-4" id="modellek">Híres modellek</h1>
             <div id="kepcsere" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -117,7 +117,7 @@
                         <img src="img/laferrari.jpg" class="d-block rounded card-img-top" alt="LaFerrari" title="LaFerrari" style="width: 500px; margin: auto;">
                         <div class="card-body d-none d-sm-block mt-3">
                             <h5 class="card-title text-center">LaFerrari</h5>
-                            <a href="" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
+                            <a href="https://en.wikipedia.org/wiki/LaFerrari" target="_blank" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
                           </div>
                     </div>
                   </div>
@@ -126,7 +126,7 @@
                         <img src="img/italia.jpg" class="d-block rounded card-img-top" alt="458 Italia" title="458 Italia" style="width: 500px; margin: auto;">
                         <div class="card-body d-none d-sm-block mt-3">
                             <h5 class="card-title text-center">Ferrari 458 Italia</h5>
-                            <a href="" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
+                            <a href="https://en.wikipedia.org/wiki/Ferrari_458" target="_blank" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
                           </div>
                     </div>
                   </div>
@@ -135,7 +135,7 @@
                         <img src="img/berlnita.jpg" class="d-block rounded card-img-top" alt="Berlinetta" title="Berlinetta" style="width: 500px; margin: auto;">
                         <div class="card-body d-none d-sm-block mt-3">
                             <h5 class="card-title text-center">Berlinetta</h5>
-                            <a href="" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
+                            <a href="https://en.wikipedia.org/wiki/Berlinetta" target="_blank" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
                           </div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@
                         <img src="img/488_gtb.jpg" class="d-block rounded card-img-top" alt="488 GTB" title="488 GTB" style="width: 500px; margin: auto;">
                         <div class="card-body d-none d-sm-block mt-3">
                             <h5 class="card-title text-center">488 GTB</h5>
-                            <a href="" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
+                            <a href="https://www.ferrari.com/en-EN/auto/ferrari-488-gtb" target="_blank" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
                           </div>
                     </div>
                   </div>
@@ -153,7 +153,7 @@
                         <img src="img/f1.jpg" class="d-block rounded card-img-top" alt="F1-es Ferrari" title="F1-es Ferrari" style="width: 500px; margin: auto;">
                         <div class="card-body d-none d-sm-block mt-3">
                             <h5 class="card-title text-center">FErrari F1</h5>
-                            <a href="" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
+                            <a href="https://hu.wikipedia.org/wiki/Scuderia_Ferrari" target="_blank" class="btn btn-danger card-text float-end mt-1">Olvass többet...</a>
                           </div>
                         </div>
                     </div>
@@ -167,6 +167,17 @@
                   <span class="visually-hidden">Következő</span>
                 </button>
               </div>
+        </section>
+
+        <section class="container-fluid col-sm-12">
+            <h1 class="text-center my-4" id="color">A Ferrari föbb színei:</h1>
+                <ul class="text-center">
+                    <li>Piros</li>
+                    <li>Fehér</li>
+                    <li>Sárga</li>
+                    <li>Fekete</li>
+                    <li>Zöld</li>
+                </ul>
         </section>
 
         <section class="container-fluid col-sm-12">
@@ -189,8 +200,14 @@
 
 
         <footer>
-            <p> 
-                copiright Drótos Gábor
+            <div class="socialicon">
+                <a href="https://hu-hu.facebook.com/gabor.drotos.585"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/drotos._.gabor"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com/@gabor.drotos"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:drotosg@kkszki.hu"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="text-center"> 
+                Copyright &copy;2024, Készítette: Drótos Gábor
             </p>
         </footer>
 
