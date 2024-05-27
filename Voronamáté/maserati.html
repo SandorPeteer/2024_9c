@@ -6,6 +6,13 @@
     <title>Maserati - Luxus és Teljesítmény</title>
     <link rel="stylesheet" href="maserati.css">
 </head>
+    <style>
+        #newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 <body>
 
 <header>
@@ -68,21 +75,23 @@
     
     
 
-    <div id="newsletter">
-        <h3>Hírlevél feliratkozás</h3>
-        <form id="newsletterForm">
-            <label for="név">Név:</label>
-            <input type="text" id="név" name="név" required>
-            <br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <input type="checkbox" id="adatvédelem" name="adatvédelem" required>
-            <label for="adatvédelem">Elolvastam és elfogadom az adatvédelmi szabályzatot</label>
-            <br><br>
-            <button type="submit">Feliratkozás</button>
-            <p id="formÜzenet" class="error"></p>
-        </form>
+    <div id="newsletter-container">
+        <div id="newsletter">
+            <h3>Hírlevél feliratkozás</h3>
+            <form id="newsletter-form">
+                <label for="név">Név:</label>
+                <input type="text" id="név" name="név" required>
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <input type="checkbox" id="adatvédelem" name="adatvédelem" required>
+                <label for="adatvédelem">Elolvastam és elfogadom az adatvédelmi szabályzatot</label>
+                <br><br>
+                <button type="submit">Feliratkozás</button>
+                <p id="formÜzenet" class="error"></p>
+            </form>
+        </div>
     </div>
 
     <footer>
@@ -90,7 +99,7 @@
     </footer>
     
     <script>
-        document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+        document.getElementById('newsletter-form').addEventListener('submit', function(event) {
             event.preventDefault();
         var név = document.getElementById('név').value;
         var email = document.getElementById('email').value;
