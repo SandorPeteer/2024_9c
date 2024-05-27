@@ -45,8 +45,18 @@
     z-index: 10;
     opacity: 0;
 }
-
-
+.szoveg {
+    font-family: "Roboto Slab", serif;
+}
+.szoveg01 {
+    opacity: 0;
+}
+@media (max-width: 450px) and (min-width: 0px) {
+    .overlaykocsi {
+        width: 0px;
+    }
+    
+}
 
 @media screen and (max-width: 450px) {
     .overlaykocsi {

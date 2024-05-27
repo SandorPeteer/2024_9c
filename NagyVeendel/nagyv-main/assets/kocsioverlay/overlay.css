@@ -29,6 +29,14 @@
     width: 0;
     animation: 1s fulloverlay1;
   }
+
+@media (max-width: 600px) and (min-width: 0px) {
+    .fulloverlay {
+      background-color: #8f8f8fd3;
+      animation-duration: 0s;
+      transition: 1s;
+    }
+}
 @keyframes fulloverlay1 {
   
   from {
