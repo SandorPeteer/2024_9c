@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <img src="image (2).png" onclick=hideSidebar() style="height: 25px;" width="25px">
+            <li><a href="#">Modellek</a></li>
+            <li><a href="#">Bolt</a></li>
+            <li><a href="#">Feliratkozás</a></li>
+            <li><a href="#">Múzeum</a></li>
+        </ul>
+        <ul>
+            <img src="lamboka.webp" class="lamboka">
+            <li class="hideOnMobile"><a href="#">Modellek</a></li>
+            <li  class="hideOnMobile"><a href="#">Bolt</a></li>
+            <li class="hideOnMobile"><a href="#">Feliratkozás</a></li>
+            <li  class="hideOnMobile"><a href="#">Múzeum</a></li>
+            <img src="image (1).png" class="menu-button" onclick=showSidebar() style="height: 25px;" width="25px">
+        </ul>
+    </nav>
+    <img src="lambo1.jpg" alt="" class="lambo img-fluid">
+    <div class="m-1 p-1">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="urush1 text-center">URUS</h1>
+                <p class="fs-3 ">A Lamborghini Urus egy olyan jármű, amely ötvözi a sportautók teljesítményét és vezetési élményét az SUV-k praktikusságával és kényelmével, így ideális választás lehet azoknak, akik nem szeretnének kompromisszumot.</p>
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Teljesítmény</th>
+                        <th scope="col">Nyomaték</th>
+                        <th scope="col">Végsebesség</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>650 lóerő</td>
+                        <td>850Nm</td>
+                        <td>305km/h</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6">
+                <img src="uruska.webp" alt="" class=" urus img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

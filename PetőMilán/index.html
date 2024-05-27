@@ -1,25 +1,13 @@
 
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Alfa Romeo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
-      .viewable-image {
-        transition: all 0.15s ease-in-out;
-        position: relative;
-        z-index: 1;
-      }
-
-      @media (min-width: 768px) {
-        .viewable-image:hover {
-          transform: scale(1.05);
-          z-index: 1000;
-        }
-      }
-
       body {
         font-family: monospace;
       }
@@ -30,13 +18,81 @@
 
       html, body {
         scrollbar-width: none;
-        overflow: hidden;
+        overflow-y: hidden;
+      }
+
+      th, td {
+        padding: 5px;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: white !important;
+      }
+
+      #navigation {
+        width: 100%;
+        position: fixed;
+        background-color: #121212;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        box-shadow: 0 0 50px black;
+      }
+
+      #navigation.visible {
+        opacity: 1;
+      }
+
+      #navigation:hover {
+        opacity: 1;
       }
 
       @media (max-width: 768px),
              (max-height: 640px),
              (pointer: coarse) {
         html, body { overflow-y: auto; }
+
+        #navigation {
+          opacity: 1;
+          display: block;
+        }
+      }
+
+      #newsletter {
+        outline: none;
+        display: flex;
+        width: 400px;
+        border-radius: 5px;
+        border: 2px solid #FFFFFF;
+        transition: border 0.6s ease-in-out;
+      }
+
+      #newsletter input[type="email"] {
+        width: 250px;
+        font-size: 20px;
+        color: #d6d6d6;
+        border: 2px solid #121212;
+        border-radius: 5px 0 0 5px;
+        background-color: #121212;
+      }
+
+      #newsletter input[type="email"]:focus {
+        outline: none;
+      }
+
+      #newsletter button {
+        width: 150px;
+        color: #d6d6d6;
+        border: 0px;
+        background-color: #962f2a;
+        border-radius: 0 3px 3px 0;
+      }
+
+      #newsletter.success {
+        border: 2px solid #8ae530;
+      }
+
+      #newsletter.failure {
+        border: 2px solid #962f2a;
       }
 
       .reveal-section {
@@ -44,6 +100,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: inset 0px 0px 50px black;
       }
 
       .animation-item {
@@ -53,13 +110,14 @@
       .animation-item.scrolled { opacity: 1; }
 
       /* Animáció típusok */
-      .scrolled.fade-in          { animation: fade-in 1.0s ease-in-out both; }
-      .scrolled.slide-left       { animation: slide-in-left 0.5s ease-in-out both; }
-      .scrolled.slide-right      { animation: slide-in-right 0.5s ease-in-out both; }
+      .scrolled.fade-in          { animation: fade-in        1.00s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+      .scrolled.slide-left       { animation: slide-in-left  0.75s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+      .scrolled.slide-right      { animation: slide-in-right 0.75s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
 
-      .scrolled.fade-in-slow     { animation: fade-in 1.5s ease-in-out both; }
-      .scrolled.slide-left-slow  { animation: slide-in-left 1.0s ease-in-out both; }
-      .scrolled.slide-right-slow { animation: slide-in-right 1.0s ease-in-out both; }
+      .scrolled.fade-in-slow     { animation: fade-in        1.50s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+      .scrolled.slide-left-slow  { animation: slide-in-left  1.00s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+      .scrolled.slide-right-slow { animation: slide-in-right 1.00s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+
 
       /* Animációk */
       @keyframes slide-in-left {
@@ -83,7 +141,7 @@
         }
         100% {
           -webkit-transform: translateX(0);
-          transform: translateX(0);
+          transform: translateX(0%);
           opacity: 1;
         }
       }
@@ -96,105 +154,212 @@
   </head>
 
   <body class="text-white">
-    </section>
-    <!-- 1. oldal: [Cím]
-         +----------------------------+
-         |                            |
-         |           <LOGO>           |
-         |                            |
-         +----------------------------+ -->
-    <section class="reveal-section" style="background-color: #af2f28;">
-      <div class="row">
-        <img src="logo.png" class="animation-item fade-in" style="max-width: 500px;">
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+         id="navigation">
+      <div class="container">
+        <button class="navbar-brand btn btn-link"
+          onclick="scrollToIndex(0);">Alfa Romeo</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content" aria-controls="navbar-content"
+                aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button class="nav-link btn btn-link" onclick="scrollToIndex(1);">
+                Története
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-link" onclick="scrollToIndex(2);">
+                Modellek
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-link" onclick="scrollToIndex(3);">
+                Hírlevél
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-link" onclick="scrollToIndex(4);">
+                Copyright
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <!-- INTRO -->
+    <section class="reveal-section" style="background-color: #962f2a;">
+      <img src="img/logo.png" class="animation-item fade-in"
+           style="max-width: 500px; max-height: 500px;"
+           title="Alfa Romeo Logó">
+      <h5 class="text-white fw-bold animation-item fade-in-slow"
+          style="position: absolute; bottom: 10%;">Görgess!</h5>
     </section>
 
-    <!-- 2. oldal: [Történet, 2 kép: ["Giulia", "Spider"]]
-         +----------------------------+
-         | [           ^^           ] |
-         | +----------+  +----------+ |
-         | |   ->     |  |     <-   | |
-         | +----------+  +----------+ |
-         +----------------------------+ -->
-    <section class="reveal-section bg-dark pt-5 mt-3">
+    <!-- HISTORY -->
+    <section class="reveal-section section-bg bg-dark pt-5">
       <div class="container">
         <div class="animation-item fade-in p-1 fs-4"
           style="border-radius: 10px; text-align: justify;">
-          Az <span class="text-danger">Alfa Romeo</span> több mint egy
+          <p>Az <span class="text-danger">Alfa Romeo</span> több mint egy
             évszázada vezeti az innováció útját a kifinomult mérnöki megoldások
             és a versenysport iránti szenvedély révén. A cég kultikus modellekkel
             gazdagította a piacot, köztük olyan legendák, mint a
             <span class="text-success">Giulia</span>, a <span class="text-success">Spider</span>,
-            vagy a szupersportautók csúcsa, a <span class="text-success">8C Competizione</span>.
+            vagy a szupersportautók csúcsa, a <span class="text-success">8C
+              Competizione</span>.</p>
         </div>
         <div class="row py-4">
           <div class="col-md-6 mb-5">
-            <div class="viewable-image">
-              <img src="giulia.jpg" class="animation-item slide-left img-fluid"
-                   style="width: 100%; border-radius: 10px;">
-            </div>
+            <img src="img/giulia.jpg" class="img-fluid rounded
+                 border border-2 animation-item slide-left-slow"
+                 title="Alfa Romeo Giulia">
           </div>
           <div class="col-md-6 mb-5">
-            <div class="viewable-image">
-              <img src="spider.jpg" class="animation-item slide-right"
-                   style="width: 100%; border-radius: 10px;">
-            </div>
+            <img src="img/8c.jpg" class="img-fluid rounded
+                 border border-2 animation-item slide-right-slow"
+                 title="Alfa Romeo 8C Competizione">
+
           </div>
         </div>
       </div>
     </section>
 
-    <section class="reveal-section bg-dark container-fluid mt-3 text-center">
-      <h1 class="animation-item slide-left-slow">&copy; 2024&nbsp;</h1>
-      <h1 class="animation-item slide-right-slow">
-        <span class="text-warning">milcsu09</span>
-      </h1>
+    <!-- MODELS -->
+    <section class="reveal-section section-bg bg-dark">
+      <div class="container animation-item fade-in-slow">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="text-danger">Model</th>
+              <th scope="col" class="text-white">Kategória</th>
+              <th scope="col" class="text-success">Gyártási évek</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Giulia</th>
+              <td>Középkategóriás sport szedán</td>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th scope="row">Stelvio</th>
+              <td>Közepes méretű SUV</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">Tonale</th>
+              <td>Kompakt SUV</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <th scope="row">Alfa Romeo 4C</th>
+              <td>Sportautó</td>
+              <td>2013-2020</td>
+            </tr>
+            <tr>
+              <th scope="row">8C Competizione</th>
+              <td>Grand tourer</td>
+              <td>2007-2020</td>
+            </tr>
+            <tr>
+              <th scope="row">Alfa Romeo GTV</th>
+              <td>Középkategóriás sportkupé</td>
+              <td>1995-2005</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="reveal-section section-bg bg-dark">
+      <div id="newsletter" class="animation-item fade-in-slow"
+           style="background-color: #121212; margin: auto;">
+        <div>
+          <input class="animation-item fade-in-slow ms-2" id="newsletter-email"
+                 placeholder="example@mail.com" type="email">
+          <label class="ms-3 h6" style="color: #a5a5a5">
+            <input type="checkbox" id="newsletter-checkbox"
+                   style="transform: scale(1.3);">
+            'Elfogadom az ASZF-et'
+          </label>
+        </div>
+        <button class="animation-item fade-in-slow" onclick="subscribe();">
+          Feliratkozás Újdonságokért
+        </button>
+      </div>
+    </section>
+
+    <!-- COPYRIGHT -->
+    <section class="reveal-section section-bg bg-dark">
+      <div class="container">
+        <div class="container-fluid d-flex justify-content-center">
+          <a class="animation-item slide-left-slow text-decoration-underline h1"
+             href="https://github.com/pmilan09" target="_blank">
+            <span class="text-warning">Pető Milán</span>
+          </a>
+          <h1 class="animation-item slide-right-slow">&nbsp;&copy; 2024</h1>
+        </div>
+      </div>
     </section>
 
     <script>
       // -- PUBLIC --
-      const smallWidth = 768;
-      const smallHeight = 640;
+      const smallWidth  = 768,
+            smallHeight = 640;
 
-      const scrollCooldown = 450.0;
-      var scrollData = { active: false, index: 0, };
-      var scrollToIndex = undefined;
+      const scrollCooldown = 475;
+      var scrollData = { active: false, index: 0, },
+          scrollToIndex = undefined;
 
-      const scrollSections = document.querySelectorAll("section.reveal-section");
-      const animatedElements = document.querySelectorAll(".animation-item");
+      const scrollSections = document.querySelectorAll("section.reveal-section"),
+            animatedItems  = document.querySelectorAll(".animation-item");
 
-      var isWindowSmall = function() {
-        const renderWidth  = window.innerWidth;
-        const renderHeight = window.innerHeight;
-        return renderWidth  <= smallWidth ||
-               renderHeight <= smallHeight;
+      const defaultPageIndex = 0,
+            defaultPage = scrollSections[defaultPageIndex],
+            defaultPageAnimations = defaultPage.querySelectorAll('.animation-item');
+
+      var windowTooSmall = function() {
+        const renderWidth  = window.innerWidth,
+              renderHeight = window.innerHeight;
+        const style = window.getComputedStyle(document.body);
+        return (renderWidth  <= smallWidth ||
+                renderHeight <= smallHeight ||
+                style.getPropertyValue("overflow-y") == "auto");
       };
 
-      var loadAnimations = function() {
-        if (isWindowSmall()) {
-          animatedElements.forEach((element) => {
+      var updateAnimatedItems = function() {
+        if (this.windowTooSmall()) {
+          animatedItems.forEach((element) => {
             element.classList.add("scrolled");
           });
         }
       };
 
-      var displayAnimations = function(direction, initial=false) {
+      var handleAnimatedItems = function(direction=0) {
         const renderHeight = window.innerHeight;
-        animatedElements.forEach((element) => {
+        animatedItems.forEach((element) => {
           const elementTop = element.getBoundingClientRect().top;
-          (elementTop - (renderHeight * direction) <= renderHeight
-           && !initial)
+          (elementTop - (renderHeight * direction) <= renderHeight)
             ? element.classList.add("scrolled")
             : setTimeout(() => {
-              element.classList.remove("scrolled");
-            }, scrollCooldown);
+                if (!windowTooSmall()) {
+                  element.classList.remove("scrolled");
+                }
+              }, scrollCooldown);
         });
       };
 
       // -- MAIN --
       window.addEventListener("DOMContentLoaded", function() {
-        this.scrollToIndex = function(index, initial=false) {
-          if (scrollData.active || isWindowSmall()) {
+        this.scrollToIndex = function(index, animations=true) {
+          if (scrollData.active) {
             return;
           }
 
@@ -203,41 +368,81 @@
             behavior: "smooth",
           });
 
-          const direction = index - scrollData.index;
-          this.displayAnimations(direction, initial);
-          this.scrollData = { active: true, index: index, };
+          if (animations == true) {
+            const direction = index - scrollData.index;
+            this.handleAnimatedItems(direction);
+            const navigation = document.getElementById("navigation");
+            if (scrollData.index + direction >= 1 && !windowTooSmall()) {
+              setTimeout(() => {
+                navigation.classList.add("visible");
+              }, scrollCooldown);
+            } else {
+              setTimeout(() => {
+                navigation.classList.remove("visible");
+              }, scrollCooldown)
+            }
+          }
+
+          scrollData = { active: true, index: index, };
           setTimeout(() => {
             scrollData.active = false;
           }, scrollCooldown);
         };
 
-        loadAnimations();
-        this.scrollToIndex(0, true);
+        this.scrollToIndex(defaultPageIndex, false);
+        this.updateAnimatedItems();
         setTimeout(() => {
-          animatedElements[0].classList.add("scrolled");
+          defaultPageAnimations.forEach((element) => {
+            element.classList.add("scrolled");
+          });
         }, scrollCooldown);
       });
 
       // -- SCROLLING --
       window.addEventListener("wheel", function(event) {
+        if (this.windowTooSmall()) {
+          return;
+        }
+
         const direction = (event.deltaY > 0) ? 1 : -1;
         this.scrollToIndex(Math.min(
           Math.max(scrollData.index + direction, 0),
-                   scrollSections.length - 1));
+          scrollSections.length - 1));
       });
 
       window.addEventListener("resize", function() {
-        loadAnimations();
-        if (!isWindowSmall()) {
+        this.updateAnimatedItems();
+        if (!this.windowTooSmall()) {
           window.scrollTo({
             top: scrollSections[scrollData.index].offsetTop,
             behavior: "instant"
           });
         }
       });
+
+      // -- NEWSLETTER --
+      var subscribe = function() {
+        const regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const newsletter = document.getElementById("newsletter"),
+              email      = document.getElementById("newsletter-email"),
+              checkbox   = document.getElementById("newsletter-checkbox");
+
+        if (!regex.test(email.value) || !checkbox.checked) {
+          newsletter.classList.add("failure");
+        } else {
+          newsletter.classList.add("success");
+          localStorage.setItem("email", email.value);
+          email.value = "";
+          checkbox.checked = false;
+        }
+
+        setTimeout(() => {
+          newsletter.classList.remove("success");
+          newsletter.classList.remove("failure");
+        }, 800)
+      };
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
-
