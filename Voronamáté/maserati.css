@@ -43,28 +43,28 @@ footer {
 }
 #lista {
     color: honeydew;
-    padding: 20px; /* Kitöltés a tartalom körül */
-    border-radius: 8px; /* Lekerekített sarkok */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enyhe árnyék a doboz körül */
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #lista h3 {
-    font-size: 1.75em; /* Nagyobb betűméret a címsornak */
-    color: #343a40; /* Sötétebb szövegszín */
-    margin-bottom: 15px; /* Tér a címsor és a lista között */
+    font-size: 1.75em; 
+    color: #343a40;
+    margin-bottom: 15px;
 }
 
 #lista .list-group-item {
-    font-size: 1.25em; /* Nagyobb betűméret a listaelemeknek */
-    color: #495057; /* Sötétszürke szövegszín */
-    border: 1px solid #dee2e6; /* Világos szegély a listaelemek között */
-    border-radius: 4px; /* Lekerekített sarkok a listaelemeknek */
-    margin-bottom: 10px; /* Tér a listaelemek között */
-    transition: background-color 0.3s ease; /* Enyhe átmenet a háttérszín váltásánál */
+    font-size: 1.25em; 
+    color: #495057; 
+    border: 1px solid #dee2e6; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+    transition: background-color 0.3s ease; 
 }
 
 #lista .list-group-item:hover {
-    background-color: #e9ecef; /* Világosabb háttérszín egérmutató fölé érkezéskor */
+    background-color: #e9ecef; 
 }
 
 .auto-tartalom {
