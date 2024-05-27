@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hírlevél</title>
+    <link rel="stylesheet" href="mitsubishi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="img/mitsubishi50.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top container-fluid">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://www.mitsubishi.hu/" target="_blank"><img src="./img/mitsubishi50.png" alt=""></a>
+
+              
+    
+              <div class="collapse navbar-collapse topnav" id="collapsibleNavbar">
+              </div>
+              
+              <div class="topnav-right topnav">
+                <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg> Főoldal</a>
+                <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg> Mitsubishi</a>
+                <a class="nav-link text-danger" href="#">Hírlevél</a>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+    <hr>
+    <div class="form-card1"  style="width: fit-content; margin: auto;">
+        <div class="form-card2"  style="width: fit-content; margin: auto;">
+          <form action="javascript:fel()" class="form">
+            <fieldset style="width: fit-content; margin: auto;">
+                <h1 class="form-heading">Hírlevélre feliratkozás</h1>
+                <div class="form-field">
+                  <input required="" placeholder="Név" class="input-field" type="text" />
+                </div>
+                <br>
+                <div class="form-field">
+                  <input
+                    required=""
+                    placeholder="Email"
+                    class="input-field"
+                    type="email"
+                  />
+                </div>
+                <br>
+                <div class="form-field">
+                    <input
+                    class="checkmark"
+                    required=""
+                    type="checkbox"
+                    name="data"
+                    id="aszf"
+                    checked>Á.Sz.F.<br>
+                </div>
+                <br>
+                <div class="form-field">
+                    <input
+                    class="checkmark"
+                    type="checkbox"
+                    name="data"
+                    id="hir_level">Hírlevél<br>
+                </div>
+                <br>
+
+
+                <input type="submit" value="OK" class="sendMessage-btn">
+                <br><br><br>
+                <div class="tooltip-container">
+                    <span class="tooltip">A hírlevél azért jó, mert rendszeresen tájékoztat az oldal frissítéseiről, így mindig naprakész maradhatsz.</span>
+                    <span class="text">Miért jó a hírlevél?</span>
+                  </div>
+                  <br>
+
+
+                
+            </fieldset>
+
+          </form>
+        </div>
+      </div>
+      
+    <script>
+        function fel() {
+            if (aszf.checked){
+                localStorage.setItem("email",mail_input.value)
+                localStorage.setItem("name",name_input.value)
+                if (hir_level.checked){
+                    localStorage.setItem("hírlevél","igen")
+                }
+                else{
+                    localStorage.setItem("hírlevél","nem")
+                }
+            }
+            else{
+                alert("El kell fogadni az ÁSZF-et!")
+            }
+        }
+    </script>
+</body>
+</html>
