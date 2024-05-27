@@ -10,6 +10,7 @@
     box-shadow:  36px 36px 72px #929292,
                 -36px -36px 72px #f3f3f3;
     transition: 0.5s;
+    font-family: "Roboto Slab", serif;
   }
   .kocsi-overlay-content {
     position: relative;
@@ -35,6 +36,9 @@
       background-color: #8f8f8fd3;
       animation-duration: 0s;
       transition: 1s;
+    }
+    .kocsi-overlay {
+      top: 2rem;
     }
 }
 @keyframes fulloverlay1 {

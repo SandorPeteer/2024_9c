@@ -1,0 +1,327 @@
+#bev1 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p1 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev2 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p2 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev3 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p3 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev4 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p4 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+
+
+
+
+#bev01 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p01 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev02 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p02 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev03 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p03 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev04 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p04 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+
+
+
+
+#bev001 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p001 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev002 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p002 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev003 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p003 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev004 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p004 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+
+
+
+#bev0001 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p0001 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev0002 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p0002 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev0003 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p0003 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+#bev0004 {
+    opacity: 0;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: larger;
+}
+#p0004 {
+    padding: 0.5rem;
+    opacity: 0;
+    font-size: large;
+}
+@media only screen and (max-width: 450px) and (min-width: 0px) {
+    #bev1 {
+        font-size: small;
+    }
+    #p1 {
+
+        font-size: small;
+    }
+    #bev2 {
+
+        font-size: small;
+    }
+    #p2 {
+
+        font-size: small;
+    }
+    #bev3 {
+
+        font-size: small;
+    }
+    #p3 {
+
+        font-size: small;
+    }
+    #bev4 {
+
+        font-size: small;
+    }
+    #p4 {
+
+        font-size: small;
+    }
+    
+    
+    
+    
+    #bev01 {
+
+        font-size: small;
+    }
+    #p01 {
+
+        font-size: small;
+    }
+    #bev02 {
+
+        font-size: small;
+    }
+    #p02 {
+
+        font-size: small;
+    }
+    #bev03 {
+
+        font-size: small;
+    }
+    #p03 {
+
+        font-size: small;
+    }
+    #bev04 {
+
+        font-size: small;
+    }
+    #p04 {
+
+        font-size: small;
+    }
+    
+    
+    
+    
+    #bev001 {
+
+        font-size: small;
+    }
+    #p001 {
+
+        font-size: small;
+    }
+    #bev002 {
+
+        font-size: small;
+    }
+    #p002 {
+
+        font-size: small;
+    }
+    #bev003 {
+
+        font-size: small;
+    }
+    #p003 {
+
+        font-size: small;
+    }
+    #bev004 {
+
+        font-size: small;
+    }
+    #p004 {
+
+        font-size: small;
+    }
+    
+    
+    
+    #bev0001 {
+
+        font-size: small;
+    }
+    #p0001 {
+
+        font-size: small;
+    }
+    #bev0002 {
+
+        font-size: small;
+    }
+    #p0002 {
+
+        font-size: small;
+    }
+    #bev0003 {
+
+        font-size: small;
+    }
+    #p0003 {
+
+        font-size: small;
+    }
+    #bev0004 {
+
+        font-size: small;
+    }
+    #p0004 {
+
+        font-size: small;
+    }
+}
