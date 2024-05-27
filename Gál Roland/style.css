@@ -6,10 +6,12 @@ body{
 
 }
     
-    nav{
+nav{
     background-color: black;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     padding: 8px;
+    position: fixed;
+    width: 100vw;
 }
 nav ul{
     width: 100%;
