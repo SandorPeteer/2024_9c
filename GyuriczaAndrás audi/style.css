@@ -1,0 +1,25 @@
+.logo  {
+    margin: 0;
+    width: 50%;
+    height: 50%S;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+footer {
+    text-align: center;
+}
+
+.imgaudi { 
+    border: solid black;
+    
+}
+
+body{
+    font-style: italic;
+}
