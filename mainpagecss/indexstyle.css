@@ -2,7 +2,7 @@ body {
     background-color: rgb(235, 235, 235);
 }
 header {
-    background-image: url('carmeet.avif');
+    background-image: url('/mainpagecss/carmeet.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ nav {
 
 @media (max-width:769px) and (min-width:0px) {
     header {
-        background-image: url('carmeet1.jpg');
+        background-image: url('/mainpagecss/carmeet1.jpg');
     }
     .navbar a {
         font-size: larger;
