@@ -84,3 +84,12 @@ nav li:first-child{
 .urus{
     border-radius: 20px;
 }
+footer{
+    background-color: #9C9C9C;
+    padding: 30px;
+}
+.card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -13,14 +13,12 @@
             <img src="image (2).png" onclick=hideSidebar() style="height: 25px;" width="25px">
             <li><a href="#">Modellek</a></li>
             <li><a href="#">Bolt</a></li>
-            <li><a href="#">Feliratkozás</a></li>
             <li><a href="#">Múzeum</a></li>
         </ul>
         <ul>
             <img src="lamboka.webp" class="lamboka">
             <li class="hideOnMobile"><a href="#">Modellek</a></li>
             <li  class="hideOnMobile"><a href="#">Bolt</a></li>
-            <li class="hideOnMobile"><a href="#">Feliratkozás</a></li>
             <li  class="hideOnMobile"><a href="#">Múzeum</a></li>
             <img src="image (1).png" class="menu-button" onclick=showSidebar() style="height: 25px;" width="25px">
         </ul>
@@ -57,10 +55,29 @@
 
 
 
+    <div class="card text-center bg-dark text-white" style="max-width: 500px; margin: auto; padding: 20px;">
+        <span class="card_title">Feliratkozás</span>
+        <p class="card_content">
+            Pólók, Pulcsik, Bögrék, Genyók
+        </p>
+        <fieldset class="card_form text-center">
+            <form action="">
+                <input  placeholder="Valami@mail.com" type="email" id="email" required>
+                <input type="submit" value="subcribe" onclick="subcribe()">
+            </form>
+            
+        </fieldset>
+    </div>
 
-
-
+    <footer>
+        <p style="text-align: center;">Gál Roland &copy; 2024</p>
+    </footer>
     <script>
+        function subcribe()
+        {
+            let e=document.getElementById("email");
+            localStorage.setItem("email", e.value);
+        }
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
