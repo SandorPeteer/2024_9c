@@ -23,7 +23,7 @@
 
       th, td {
         padding: 5px;
-        font-size: 20px;
+        /*font-size: 20px;*/
         background-color: rgba(0, 0, 0, 0) !important;
         color: white !important;
       }
@@ -46,6 +46,21 @@
         opacity: 1;
       }
 
+      /* BETŰTÍPUSOK */
+      @media (min-width:768px) {
+        th, td {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width:1280px) {
+        th, td {
+          font-size: 20px;
+        }
+      }
+      /* ----------- */
+
+      /* TELEFONOS MÉRET */
       @media (max-width: 768px),
              (max-height: 640px),
              (pointer: coarse) {
@@ -56,6 +71,7 @@
           display: block;
         }
       }
+      /* ----------- */
 
       #newsletter {
         outline: none;
@@ -245,32 +261,32 @@
             <tr>
               <th scope="row">Giulia</th>
               <td>Középkategóriás sport szedán</td>
-              <td>2015</td>
+              <td>2015 -</td>
             </tr>
             <tr>
               <th scope="row">Stelvio</th>
               <td>Közepes méretű SUV</td>
-              <td>2016</td>
+              <td>2016 -</td>
             </tr>
             <tr>
               <th scope="row">Tonale</th>
               <td>Kompakt SUV</td>
-              <td>2022</td>
+              <td>2022 -</td>
             </tr>
             <tr>
               <th scope="row">Alfa Romeo 4C</th>
               <td>Sportautó</td>
-              <td>2013-2020</td>
+              <td>2013 - 2020</td>
             </tr>
             <tr>
               <th scope="row">8C Competizione</th>
               <td>Grand tourer</td>
-              <td>2007-2020</td>
+              <td>2007 - 2020</td>
             </tr>
             <tr>
               <th scope="row">Alfa Romeo GTV</th>
               <td>Középkategóriás sportkupé</td>
-              <td>1995-2005</td>
+              <td>1995 - 2005</td>
             </tr>
           </tbody>
         </table>
