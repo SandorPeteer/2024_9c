@@ -5,6 +5,7 @@ body {
     background-color: #f4f4f4;
     background-image: url(Background.png);
     background-repeat: no-repeat;
+    background-size: cover;
     color: rgb(136, 146, 146);
     overflow-x: hidden;
 
@@ -102,4 +103,5 @@ footer {
             max-width: 50%;
             height: auto;
             border-radius: 8px;
+            width:50rem;
 }
