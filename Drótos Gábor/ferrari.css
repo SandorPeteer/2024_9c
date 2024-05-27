@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@856&family=Quicksand:wght@300..700&display=swap');
+#hirlevel {
+    font-family: "Quicksand";
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ae1c1c;
+    background-color: hsl(93, 9%, 81%);
+}
+input[type="submit"] {
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+.side-bar{
+    background: #FFF200;
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    transition: 0.5 ease;
+    overflow-y: auto;
+    top: 0;
+    transition-property: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 35px;
+}
+.side-bar.active{
+    left: 0;
+}
+.close{
+    color: #ae1c1c;
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+}
+header p{
+    color: #ae1c1c;
+    font-size: 40px;
+    font-family: "Quicksand";
+}
+header a{
+    font-family: "Quicksand";
+    color: #ae1c1c;
+    margin: 10px;
+}
+header a:hover{
+    color: #ff0000;
+    transition: ease-in-out 1.5s;
+}
+footer{
+    color: #ae1c1c;
+    font-family: "Quicksand";
+}
+button[type="button"]{
+    width: 70px;
+}
+#prebg{
+    height: 100vh;
+    width: 100%;
+    background: black url(./img/logo.png) no-repeat center center;
+    background-size: 50%;
+    position: fixed;
+    z-index: 100;
+}
+video{
+    display: block;
+    margin: 40px 25% 100px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 32px 70px 30px;
+}
+p{
+    font-weight: 700;
+}
+
