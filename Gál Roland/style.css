@@ -79,6 +79,7 @@ nav li:first-child{
     max-width: 150px;
     position: absolute;
     left: 30px;
+    top: 5px;
 }
 .lambo{
     min-width: 100vw;
