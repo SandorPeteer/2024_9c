@@ -1,0 +1,100 @@
+
+header{
+    align-content: center;
+    height: 250px;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(img/header.webp);
+    
+}
+#tomb{
+    width: 60%;
+    margin: auto
+}
+h1{
+    color: white;
+    text-align: center;
+}
+#navbar{
+    border-bottom: solid 2px black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+}
+#logo{
+    width: 50px;
+}
+#nav{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+#tortenet{
+    text-align: justify;
+    margin-bottom: 100px;
+}
+#kep{
+    float: right;
+    width: 250px;
+}
+h2{
+
+   padding-bottom: 15px; 
+}
+#kocsi{
+    float: left;
+    width: 400px;
+}
+#modellek{
+    text-align: justify;
+}
+#card{
+    margin-bottom: 150px;
+    align-items: center;
+}
+h3{ 
+    padding-bottom: 20px;
+    text-align: center;
+}
+#fotorzs{
+    padding: 10px;
+}
+p{
+    padding-left: 10px;
+}
+#kapcs{
+    text-align: center;
+}
+figure{
+    text-align: center;
+    float: right;
+}
+#motor{
+    border-radius: 50px;
+    float: left;
+    width: 500px;
+}
+#motortortenet{
+    margin-bottom: 150px;
+}
+#keret1{
+    margin-left: 47%;
+}
+#hirlevel{
+    padding: 20px;
+    width: 500px;
+    border:solid black 2px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 70px;
+}
+#name, #useremail{
+    margin: 10px;
+}
+#sub{
+    margin-top: 15px;
+}
