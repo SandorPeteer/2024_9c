@@ -6,7 +6,7 @@ body {
     background-image: url(Background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(182, 190, 190);
+    color: #e9eeee;
     overflow-x: hidden;
 
 }
