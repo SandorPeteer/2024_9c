@@ -1,6 +1,6 @@
 .card {
-    width: 346px;
-    height: 254px;
+    width: 24rem;
+    height: 21rem;
     padding: 0px 15px;
     text-align: center;
     display: flex;
@@ -80,4 +80,62 @@
     100% {
         transform: rotate(0deg);
     }
+}
+.container {
+  --color: #a5a5b0;
+  --size: 3rem;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container .bell-regular {
+  position: absolute;
+  animation: keyframes-fill .5s;
+}
+
+.container .bell-solid {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill .5s;
+}
+
+.container input:checked ~ .bell-regular {
+  display: none;
+}
+
+.container input:checked ~ .bell-solid {
+  display: block;
+}
+
+.aszf {
+  font-size: larger;
+  font-family: "Lilita One", sans-serif;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+@keyframes keyframes-fill {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    transform: rotate(25deg);
+  }
+
+  50% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
 }

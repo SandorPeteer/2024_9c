@@ -1,5 +1,5 @@
 function kocsiopenmustang() {
-    document.getElementById("hoveroverlaymustang").style.width = "70vw";
+    document.getElementById("hoveroverlaymustang").style.width = "75vw";
     document.getElementById("fulloverlay").style.width = "100%";
     document.getElementById("kocsik01").style.opacity = "1";
     document.getElementById("bev1").style.opacity = "1";
@@ -28,7 +28,7 @@ function kocsiopenmustang() {
 
 
   function kocsiopenpuma() {
-    document.getElementById("hoveroverlaypuma").style.width = "70vw";
+    document.getElementById("hoveroverlaypuma").style.width = "75vw";
     document.getElementById("fulloverlay").style.width = "100%";
     document.getElementById("kocsik02").style.opacity = "1";
     document.getElementById("bev01").style.opacity = "1";
@@ -57,7 +57,7 @@ function kocsiopenmustang() {
 
 
   function kocsiopenfiesta() {
-    document.getElementById("hoveroverlayfiesta").style.width = "70vw";
+    document.getElementById("hoveroverlayfiesta").style.width = "75vw";
     document.getElementById("fulloverlay").style.width = "100%";
     document.getElementById("kocsik03").style.opacity = "1";
     document.getElementById("bev001").style.opacity = "1";
@@ -86,7 +86,7 @@ function kocsiopenmustang() {
   }
 
   function kocsiopenfocus() {
-    document.getElementById("hoveroverlayfocus").style.width = "70vw";
+    document.getElementById("hoveroverlayfocus").style.width = "75vw";
     document.getElementById("fulloverlay").style.width = "100%";
     document.getElementById("kocsik04").style.opacity = "1";
     document.getElementById("bev0001").style.opacity = "1";
