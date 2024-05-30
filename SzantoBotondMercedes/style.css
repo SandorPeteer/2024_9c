@@ -63,7 +63,7 @@ body{
     display: flex;
     border: solid white;
     border-radius: 10px;
-    box-shadow: white 0px 3px 4px 4px;
+    box-shadow: white 10px 5px 10px 5px;
 }
 
 #card1 {
