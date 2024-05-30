@@ -43,7 +43,7 @@ nav li:first-child{
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 300px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -79,7 +79,6 @@ nav li:first-child{
     max-width: 150px;
     position: absolute;
     left: 30px;
-    top: 5px;
 }
 .lambo{
     min-width: 100vw;
