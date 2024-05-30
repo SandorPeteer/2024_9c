@@ -169,7 +169,7 @@
         function subcribe()
         {
             let e=document.getElementById("email");
-            if(aszf_chbox.checked) { localStorage.setItem("email", e.value);
+            if(aszf_chbox.checked && e.value.includes("@")) { localStorage.setItem("email", e.value);
             alert("Köszönöm a feliratkozást :)");}
             
         }
