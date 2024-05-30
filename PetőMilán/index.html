@@ -74,16 +74,14 @@
       /* ----------- */
 
       #newsletter {
-        outline: none;
-        display: flex;
-        width: 400px;
+        width: 250px;
         border-radius: 5px;
         border: 2px solid #FFFFFF;
         transition: border 0.6s ease-in-out;
       }
 
       #newsletter input[type="email"] {
-        width: 250px;
+        width: 95%;
         font-size: 20px;
         color: #d6d6d6;
         border: 2px solid #121212;
@@ -96,11 +94,11 @@
       }
 
       #newsletter button {
-        width: 150px;
         color: #d6d6d6;
+        width: 100%;
         border: 0px;
         background-color: #962f2a;
-        border-radius: 0 3px 3px 0;
+        border-radius: 3px;
       }
 
       #newsletter.success {
@@ -203,6 +201,18 @@
                 Copyright
               </button>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://sandorpeteer.github.io/2024_9c/0olaszGROUP/olaszmain.html">
+                Olasz Csapat
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://sandorpeteer.github.io/2024_9c/">
+                IKT Főoldal
+              </a>
+            </li>
+          </ul>
           </ul>
         </div>
       </div>
@@ -295,20 +305,30 @@
 
     <!-- NEWSLETTER -->
     <section class="reveal-section bg-dark">
-      <div id="newsletter" class="animation-item fade-in-slow"
-           style="background-color: #121212; margin: auto;">
-        <div>
-          <input class="animation-item fade-in-slow ms-2" id="newsletter-email"
-                 placeholder="example@mail.com" type="email">
-          <label class="ms-3 h6" style="color: #a5a5a5">
-            <input type="checkbox" id="newsletter-checkbox"
-                   style="transform: scale(1.3);">
-            'Elfogadom az ASZF-et'
-          </label>
+      <div class="container">
+        <div class="animation-item slide-left-slow p-2 text-center rounded"
+             style="border: 2px solid white; max-width: 375px; margin: auto;
+                    background-color: #181818;">
+          <b style="border-bottom: 1px solid white;">Csatlakozzon Hírlevelünkhöz és Maradjon Naprakész!</b><br>
+          <p style="text-align: justify;" class="mt-3">
+            Szeretnél első kézből értesülni legújabb híreinkről, exkluzív ajánlatainkról és a legfrissebb tartalmainkról? Iratkozz fel hírlevelünkre, és garantáltan nem maradsz le semmiről!
         </div>
-        <button class="animation-item fade-in-slow" onclick="subscribe();">
-          Feliratkozás Újdonságokért
-        </button>
+
+        <div id="newsletter" class="animation-item slide-right-slow mt-5"
+             style="background-color: #121212; margin: auto;">
+          <div>
+            <input class="ms-2" id="newsletter-email"
+                   placeholder="example@mail.com" type="email">
+            <label class="ms-3 h6" style="color: #a5a5a5">
+              <input type="checkbox" id="newsletter-checkbox"
+                     style="transform: scale(1.3);">
+              'Elfogadom az ASZF-et'
+            </label>
+            <button class="animation-item fade-in-slow" onclick="subscribe();">
+              Feliratkozás Újdonságokért
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -388,7 +408,7 @@
             const direction = index - scrollData.index;
             this.handleAnimatedItems(direction);
             const navigation = document.getElementById("navigation");
-            if (scrollData.index + direction >= 1 && !windowTooSmall()) {
+            if (scrollData.index + direction != defaultPageIndex && !windowTooSmall()) {
               setTimeout(() => {
                 navigation.classList.add("visible");
               }, scrollCooldown);
