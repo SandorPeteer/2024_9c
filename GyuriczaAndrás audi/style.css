@@ -1,6 +1,6 @@
 .logo  {
     margin: 0;
-    width: 50px;
+    width: 70px;
 }
 
 .navbar-brand {
@@ -16,7 +16,7 @@ footer {
 
 .imgaudi { 
     border: solid black;
-    
+    float: right;
 }
 
 body{
