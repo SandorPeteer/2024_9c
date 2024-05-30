@@ -40,17 +40,23 @@
           <form action="javascript:fel()" class="form">
             <fieldset style="width: fit-content; margin: auto;">
                 <h1 class="form-heading">Hírlevélre feliratkozás</h1>
+                
                 <div class="form-field">
-                  <input required="" placeholder="Név" class="input-field" type="text" />
+                  <input 
+                    required="" 
+                    placeholder="Név" 
+                    class="input-field" 
+                    type="text" 
+                    id="name-input"/>
                 </div>
                 <br>
                 <div class="form-field">
-                  <input
-                    required=""
-                    placeholder="Email"
-                    class="input-field"
-                    type="email"
-                  />
+                  <input 
+                    required="" 
+                    placeholder="Email" 
+                    class="input-field" 
+                    type="email" 
+                    id="email-input"/>
                 </div>
                 <br>
                 <div class="form-field">
@@ -74,6 +80,7 @@
 
 
                 <input type="submit" value="OK" class="sendMessage-btn">
+
                 <br><br><br>
                 <div class="tooltip-container">
                     <span class="tooltip">A hírlevél azért jó, mert rendszeresen tájékoztat az oldal frissítéseiről, így mindig naprakész maradhatsz.</span>
@@ -89,22 +96,29 @@
         </div>
       </div>
       
-    <script>
+      <script>
         function fel() {
-            if (aszf.checked){
-                localStorage.setItem("email",mail_input.value)
-                localStorage.setItem("name",name_input.value)
-                if (hir_level.checked){
-                    localStorage.setItem("hírlevél","igen")
-                }
-                else{
-                    localStorage.setItem("hírlevél","nem")
-                }
+          const nameInput = document.getElementById("name-input");
+          const emailInput = document.getElementById("email-input");
+          const aszf = document.getElementById("aszf");
+          const hirLevel = document.getElementById("hir_level");
+      
+          if (aszf.checked) {
+            localStorage.setItem("email", emailInput.value);
+            localStorage.setItem("name", nameInput.value);
+      
+            if (hirLevel.checked) {
+              localStorage.setItem("hírlevél", "igen");
+              alert("Köszönjük, hogy feliratkoztál a hírlevelünkre!");
+            } else {
+              localStorage.setItem("hírlevél", "nem");
+              alert("Köszönjük!");
             }
-            else{
-                alert("El kell fogadni az ÁSZF-et!")
-            }
+            
+          } else {
+            alert("El kell fogadni az ÁSZF-et!");
+          }
         }
-    </script>
+      </script>
 </body>
 </html>
