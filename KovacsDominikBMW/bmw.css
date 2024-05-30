@@ -23,11 +23,6 @@ a:hover{
     color: orange;
 }
 /*header*/
-.nav1{
-    color: white;
-    text-decoration: none;
-}
-
 header{
     position: relative;
     padding: 0 2rem;
