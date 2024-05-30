@@ -1,6 +1,6 @@
 .logo  {
     margin: 0;
-    width: 70px;
+    width: 75px;
 }
 
 .navbar-brand {
@@ -16,9 +16,14 @@ footer {
 
 .imgaudi { 
     border: solid black;
-    float: right;
+    
 }
 
 body{
     font-style: italic;
+}
+.sportaudi{
+    text-align: justify;
+    border: solid black;
+    
 }
