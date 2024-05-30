@@ -19,6 +19,9 @@ a{
 a:hover{
     color: orange;
 }
+.active{
+    color: orange;
+}
 /*header*/
 .nav1{
     color: white;
