@@ -48,13 +48,13 @@
 
       /* BETŰTÍPUSOK */
       @media (min-width:768px) {
-        th, td {
+        .rtext, th, td {
           font-size: 16px;
         }
       }
 
       @media (min-width:1280px) {
-        th, td {
+        .rtext, th, td {
           font-size: 20px;
         }
       }
@@ -303,6 +303,31 @@
       </div>
     </section>
 
+    <section class="reveal-section bg-dark pt-5">
+      <div class="container">
+        <div class="animation-item fade-in p-1 fs-4"
+          style="border-radius: 10px; text-align: justify;">
+          <p class="rtext">Az ALFA 24 HP és az Alfa Romeo Giulia két ikonikus modell az Alfa Romeo történelmében, melyek mindkettő a maguk korának műszaki csúcsteljesítményét képviselték. Az ALFA 24 HP, amely 1910-ben debütált, az Alfa Romeo első sorozatgyártású autója volt. Ez a modell a maga 4 literes, 4 hengeres motorjával és 42 lóerős teljesítményével akkoriban úttörőnek számított.
+
+Ezzel szemben az Alfa Romeo Giulia a modern kor szellemében született újjá. A Giulia sportos és elegáns formatervezésével, fejlett technológiájával és kiváló menetdinamikájával nyűgöz le. A legújabb változatok akár 280 lóerős motorral is elérhetők, így a Giulia a vezetési élményt új szintre emeli.
+
+</p>
+        </div>
+        <div class="row py-4">
+          <div class="col-md-6 animation-item slide-left-slow">
+            <h3>1910 (ALFA 24 HP)</h3>
+            <img src="img/24hp.jpg" class="img-fluid rounded
+                 border border-2" title="Alfa Romeo 24 HP">
+          </div>
+          <div class="col-md-6 animation-item slide-right-slow">
+            <h3>2016 (Alfa Romeo Giulia)</h3>
+            <img src="img/giulia2.jpg" class="img-fluid rounded
+                 border border-2" title="Alfa Romeo Giulia">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- NEWSLETTER -->
     <section class="reveal-section bg-dark">
       <div class="container">
@@ -348,7 +373,7 @@
     <script>
       // -- PUBLIC --
       const smallWidth  = 768,
-            smallHeight = 640;
+            smallHeight = 768;
 
       const scrollCooldown = 475;
       var scrollData = { active: false, index: 0, },
@@ -357,7 +382,7 @@
       const scrollSections = document.querySelectorAll("section.reveal-section"),
             animatedItems  = document.querySelectorAll(".animation-item");
 
-      const defaultPageIndex = 0,
+      const defaultPageIndex = 3,
             defaultPage = scrollSections[defaultPageIndex],
             defaultPageAnimations = defaultPage.querySelectorAll('.animation-item');
 
