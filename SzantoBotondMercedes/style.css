@@ -244,7 +244,14 @@ a{
     text-align: justify;
 }
 
-#gomb1 {
-    background-color: aqua;
-    color: white;
+.navbar .toggle_btn{
+    color: #fff;
+}
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
 }
