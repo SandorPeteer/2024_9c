@@ -246,6 +246,8 @@ a{
 
 .navbar .toggle_btn{
     color: #fff;
+    cursor: pointer;
+    display: none;
 }
 .action_btn{
     background-color: orange;
@@ -254,4 +256,6 @@ a{
     border: none;
     outline: none;
     border-radius: 20px;
+    cursor: pointer;
+    border: none;
 }
