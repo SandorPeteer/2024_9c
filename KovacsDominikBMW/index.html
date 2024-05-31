@@ -13,40 +13,40 @@
     <link rel="shortcut icon" href="Bmw/BMW.svg.webp" type="image/x-icon">
 </head>
 <body id="head">
-    <header class="container-fluid bg-dark p-2 d-block fixed-top ">
+    <header class="container-fluid bg-dark p-2 d-block">
         <div class="navbar">
             <div class="logo "><a href="bmw.html"><img src="Bmw/bmwhead.svg" alt="bmw logó"></a></div>
             <ul class="link">
-                <li><a class="text-white" href="https://github.com/SandorPeteer/2024_9c/0NemetGROUP/">Főoldal</a></li>
-                <li><a class="active"   href="index.html">BMW</a></li>
-                <li><a class="text-white"  href="https://sandorpeteer.github.io/2024_9c/GyuriczaAndrás%20audi/audi.html">Audi</a></li>
-                <li><a class="text-white"  href="https://sandorpeteer.github.io/2024_9c/KohanyiCsongor/porsche/porsche.html">Porsche</a></li>
-                <li><a class="text-white"  href="https://sandorpeteer.github.io/2024_9c/Sz%C3%A1nt%C3%B3%20Botond%20Mercedes/index.html">Mercedes</a></li>
+                <li><a class="nav1" href="https://sandorpeteer.github.io/2024_9c/0NemetGROUP/nemetmain.html">Főoldal</a></li>
+                <li><a class="active"  href="index.html">BMW</a></li>
+                <li><a class="nav1"  href="audi">Audi</a></li>
+                <li><a class="nav1"  href="porsche">Porsche</a></li>
+                <li><a class="nav1"  href="merci">Mercedes</a></li>
             </ul>
             <a href="#hirlevel" class="action_btn">Kezdés</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-        <div class="dropdown_menu bg-dark">
+        <div class="dropdown_menu bg-dark fixed-top">
             
                 <li><a href="https://sandorpeteer.github.io/2024_9c/0NemetGROUP/nemetmain.html">Főoldal</a></li>
                     <li><a class="active" href="index.html">BMW</a></li>
-                    <li><a href="https://sandorpeteer.github.io/2024_9c/GyuriczaAndrás%20audi/audi.html">Audi</a></li>
-                    <li><a href="https://sandorpeteer.github.io/2024_9c/KohanyiCsongor/porsche/porsche.html">Porsche</a></li>
-                    <li><a href="https://sandorpeteer.github.io/2024_9c/SzantoBotondMercedes/index.html">Mercedes</a></li>
+                    <li><a href="audi">Audi</a></li>
+                    <li><a href="porsche">Porsche</a></li>
+                    <li><a href="merci">Mercedes</a></li>
                     <li><a href="#hirlevel" class="action_btn">Kezdés</a></li>
             
         </div>
     </header>
-    
+    <br><br><br>
     <div>
-        <video autoplay loop muted class=" hattervideo h-100">
+        <video autoplay loop muted class="hattervideo mx-auto d-block img-fluid">
             <source src="Bmw/m4video.mp4" type="video/mp4">
         </video>
     </div>
-    <br>
-    <div class="row row-cols-1 row-cols-md-2 g-4 container-fluid">
+    <br><br><br><br><br><br><br><br>
+    <div class="row row-cols-1 row-cols-md-2 g-4 container-fluid mx-auto">
       <div class="col">
         <div class="card border-warning border-rounded">
           <img src="Bmw/bmw-tortenelem.jpg" class="card-img-top" alt="bmw történelem">
@@ -89,29 +89,26 @@
       </div>
     </div>
     <br>
-    <section id="hirlevel" class=" container">
-        <h2 class="text-center fw-bold">Hírlevél</h2>
-        <form action="javascript:fel()">
-            <div class="mb-3">
-                <label for="name" class="form-label">Név</label>
-                <input type="text" id="name_input" class="form-control" id="name" required="">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail cím</label>
-                <input type="email" id="email_input" class="form-control" id="email" required="">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Üzenet</label>
-                <textarea class="form-control" id="message" rows="3" required=""></textarea>
-            </div>
-            <button type="submit" class="btn feliratkoz">Feliratkozás</button>
-            <button type="reset" class="btn btn-primary">Mégsem</button>
-            
-          <label for="azsf_input">ÁSZF Elfogadása</label>
-          <input type="checkbox" name="data" id="aszf_input">
-        </form>
-    </section>
-    
+    <div id="hirlevel" class="container">
+      <div class="row">
+        <section class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 my-5">
+          <div class="card p-5 hirlevel">
+            <h3 class="mb-3">Iratkozz fel a Hírlevelünkre!</h3>
+            <p class="text-justify">Iratkozz fel hogy ne maradj le semmilyen újdonságról!</p>
+            <form action="javascript:fel()">
+              <input type="text" id="name_input" class="form-control" placeholder="Teljes Név" required>
+              <br>
+              <input type="email" id="email_input" class="form-control" placeholder="Írd be az Email címedet" required>
+              <button type="submit" class="btn btn-block mt-3 rounded-pill feliratkoz" onclick="Feliratkoz()">Feliratkozás</button>
+              <br>
+              <br>
+              <input type="checkbox" name="data" id="aszf_input">
+              <label for="aszf_input">ÁSZF Elfogadása</label>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
     <br>
     <br>
     <footer>
@@ -189,5 +186,4 @@
       
       </script>
 </body>
-</html>ű
-
+</html>
