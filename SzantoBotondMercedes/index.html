@@ -135,8 +135,11 @@
               <h3 class="mb-3">Iratkozz fel a Hírlevelünkre!</h3>
               <p class="text-justify">Iratkozz fel hogy nem maradj le semmilyen újdonságról!</p>
               <form action="javascript:fel()">
+                <input type="text" id="name_input" class="form-control" placeholder="Teljes Név" required>
+                <br>
                 <input type="email" id="email_input" class="form-control" placeholder="Írd be az Email címedet" required>
                 <button type="submit" class="btn btn-primary btn-block mt-3 rounded-pill" onclick="Feliratkoz()">Feliratkozás</button>
+                <br>
                 <br>
                 <input type="checkbox" name="data" id="aszf_input">
                 <label for="aszf_input">ÁSZF Elfogadása</label>
@@ -218,6 +221,7 @@
   function fel() {
     if (aszf_input.checked) {
       localStorage.setItem("email", email_input.value)
+      localStorage.setItem("name", name_input.value)
       alert("Sikeresen Feliratkozott")
     }
 
