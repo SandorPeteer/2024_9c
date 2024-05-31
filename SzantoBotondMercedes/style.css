@@ -64,7 +64,6 @@ body{
     display: flex;
     border: solid white;
     border-radius: 10px;
-    box-shadow: white 0px 15px 13px 10px;
 }
 
 #card1 {
