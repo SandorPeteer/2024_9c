@@ -5,18 +5,27 @@
     font-family: 'Open sans', sans-serif;
 }
 .hattervideo{
-    width: 100%;
+    width: 120vh;
     display: flex;
+    box-shadow: rgba(0.532, 0.234, 0.54, 1) 0px 32px 70px 30px;
+    border-radius: 9px;
+    border: 3px solid white;
 }
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1rem;
 }
 a:hover{
+    color: orange;
+}
+.nav1{
+    color: white;
+}
+.nav1:hover{
     color: orange;
 }
 .active{
@@ -80,7 +89,6 @@ header{
     width: 300px;
     height: 0;
     background-color: white;
-   
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -125,6 +133,10 @@ header{
 .feliratkoz:hover{
     background-color: black;
     color: orange;
+}
+#hirlevel{
+    box-shadow: rgba(0.532, 0.234, 0.54, 1) 0px 32px 70px 30px;
+    
 }
 /*Történelem*/
 .bmwtöri{
