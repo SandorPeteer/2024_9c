@@ -245,7 +245,7 @@ a{
 }
 
 .navbar .toggle_btn{
-    color: #fff;
+    color: black;
     cursor: pointer;
     display: none;
 }
