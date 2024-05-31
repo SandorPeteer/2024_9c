@@ -59,10 +59,10 @@ body{
 }
 
 .video {
+    border-radius: 10px;
     width: 120vh;
     display: flex;
     border: solid white;
-    border-radius: 10px;
 }
 
 #card1 {
