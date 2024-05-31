@@ -1,0 +1,81 @@
+footer{
+    text-align: center;
+    width: 100%;
+    background-image: image(aut);
+    height: 50px;
+    background-color: #c0c0c0;
+}
+.tartalom{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(233, 229, 229);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-family: "Danfo", serif;
+    font-size: 400%;
+    color: white;
+    margin: 0px;
+}
+body{
+    background-color: lightgray;
+}
+
+
+.danfo {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+.fejlec{
+    background-image: url(autosima.jpg);
+    margin: 0px;
+}
+.kep{
+    width: 400px;
+    margin: 15px 20px 15px 15px;
+    float: left;
+    
+}
+h2{
+    text-align: center;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    background-color: #c0c0c0;
+}
+nav ul li {
+    float: left;
+    border: white 1px solid;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+    display: block;
+}
+.active{
+    background-color: #c0c0c0;
+}
+nav ul li a:hover{
+    background-color: #c0c0c0;
+}
+.gomb{
+    border-radius: 20%;
+    border: black 1px solid;
+}
+hr{
+    width: 90%;
+    height: 3px;
+    color: black;
+}

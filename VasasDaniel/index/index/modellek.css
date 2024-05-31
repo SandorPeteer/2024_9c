@@ -8,7 +8,7 @@ footer{
 .tartalom{
     width: 80%;
     margin: auto;
-    background-color: rgb(233, 229, 229);
+    background-color: white;
 }
 h1{
     text-align: center;
@@ -34,15 +34,8 @@ body{
     background-image: url(autosima.jpg);
     margin: 0px;
 }
-.kep{
-    width: 400px;
-    margin: 15px 20px 15px 15px;
-    float: left;
-    
-}
-h2{
-    text-align: center;
-}
+
+
 
 
 
@@ -69,14 +62,14 @@ nav ul li a {
 nav ul li a:hover{
     background-color: #c0c0c0;
 }
-.gomb{
-    border-radius: 20%;
-    border: black 1px solid;
+
+img{ max-width: 600px;
+    min-width: 600px;   
 }
-.kapcsolat{
-    border: black solid 2px ;
-    margin: auto;
-    width: 200px;
-    border-radius: 10%;
-    padding: 5px;
+table{
+    float: none;
+    border: black solid 2px;
+}
+td{
+    border: black solid 2px;
 }
