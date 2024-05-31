@@ -1,6 +1,5 @@
 body{
     background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -192,7 +191,7 @@ a{
 .img8 {
     border: solid white;
     border-radius: 10px;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .f1f1 {
