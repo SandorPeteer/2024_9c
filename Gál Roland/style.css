@@ -76,9 +76,9 @@ nav li:first-child{
     }
 }
 .lamboka{
-    max-width: 150px;
+    max-width: 120px;
     position: absolute;
-    left: 30px;
+    left: 20px;
 }
 .lambo{
     min-width: 100vw;
