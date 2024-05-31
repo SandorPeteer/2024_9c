@@ -1,0 +1,79 @@
+body {
+    padding-top: 56px;
+}
+.chevrolet-logo {
+    width: 150px;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+.kep1{
+    height: 18rem;
+    width: 400px;
+    display: block;
+    border: solid black;
+    
+}
+h1{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+h2{
+ 
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+p{
+    font-size: x-large;
+font-style: italic;
+
+
+}
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .logo1{
+    width: 245px;
+    height: 12rem;
+    border: solid black;
+  }
+  #tortenelem{
+    font-size: xx-large;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    
+
+  }
+  #tartalom{
+
+  }
+  h3{
+     font-weight: 250;
+    
+  }
+  #modellek{
+    border: 2px solid black;
+  }
+  hr{
+    border: 4px solid black;
+  }
+  #main-text {
+    display: none;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+#nav1{
+  font-size: x-large;
+  font-weight: 150;
+}
