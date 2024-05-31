@@ -265,5 +265,5 @@ a{
     width: 120vh;
     display: flex;
     border: solid white;
-    box-shadow: white 0px 32px 70px 30px;
+    box-shadow: white 0px 5px 5px 5px;
 }
