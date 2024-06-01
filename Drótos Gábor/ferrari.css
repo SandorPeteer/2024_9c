@@ -20,7 +20,7 @@ input[type="submit"]:hover{
     background: #FFF200;
     width: 250px;
     left: -250px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     transition: 0.5 ease;
     overflow-y: auto;
